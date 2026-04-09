@@ -1,6 +1,9 @@
+from src.example import some_function
+
+
 def test_some_function():
     """
-    This function tests the some_function function.
-    It should always return true
+    Tests that some_function returns True.
+    Replace this with tests for your actual code.
     """
     assert some_function() is True
