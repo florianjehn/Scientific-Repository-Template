@@ -23,6 +23,7 @@ axes.edgecolor : ffffff
 axes.labelcolor : dimgrey
 axes.linewidth : 1
 axes.axisbelow : True
+axes.formatter.use_mathtext : True
 
 # GRID
 axes.grid : True
@@ -36,9 +37,11 @@ grid.linewidth : 0.5
 axes.prop_cycle : cycler('color', ['573280', 'E5821C', '2D8FAB', 'BD3A3A', '3D9B6B', 'C47EC8', 'D4A520', '7B73C8', '85A85A', 'CC6680', '5A9EBA', '8C7B8C', 'A08C2A', '4DB8B8', 'B8A0D4'])
 lines.linewidth : 2
 lines.markeredgewidth : 0.0
+lines.solid_capstyle : round
 
 # SCATTER PLOT
 scatter.marker : .
+scatter.edgecolors : none
 
 # TICKS
 xtick.bottom : False
@@ -60,4 +63,6 @@ legend.edgecolor : dimgrey
 # FIGURE OUTPUT
 figure.figsize : 10, 4
 figure.dpi : 150
+figure.constrained_layout.use : True
 savefig.dpi : 300
+savefig.bbox : tight
