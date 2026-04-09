@@ -145,11 +145,15 @@ The border file is at `data/border.geojson`.
 
 ## Code Formatting & Linting
 
-All code is automatically checked on push via GitHub Actions:
+All code is automatically checked on push via GitHub Actions (lint + test run as separate jobs in `.github/workflows/ci.yml`):
 
-- **Black** — code formatting
-- **Flake8** — style checks (E203 ignored, max line length 88)
-- **isort** — import sorting (Black-compatible profile)
+- **Ruff** — formatting, style checks, and import sorting in one tool (replaces Black, Flake8, isort)
 - **pytest** — test suite
+
+Pre-commit hooks also run Ruff locally before each commit. Install them once with:
+
+```bash
+uv run pre-commit install
+```
 
 Fix all linting errors before pushing. Failing checks block merges.

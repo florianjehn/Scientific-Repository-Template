@@ -42,7 +42,7 @@ def count_line(f, line):
 - **Delete dead code.** Do not comment out unused code — use git to find it again.
 - **Most code lives in `.py` files.** Notebooks (in `notebooks/`) are for final visualizations and explanations only.
 
-Code is automatically formatted with [Black](https://github.com/psf/black) and checked with [Flake8](https://flake8.pycqa.org/) and [isort](https://pycqa.github.io/isort/) on every push via GitHub Actions. If linting fails, merges are blocked.
+Code is automatically checked with [Ruff](https://docs.astral.sh/ruff/) (formatting, linting, and import sorting) on every push via GitHub Actions. If linting fails, merges are blocked. Pre-commit hooks run Ruff locally before each commit — install with `uv run pre-commit install`.
 
 ---
 

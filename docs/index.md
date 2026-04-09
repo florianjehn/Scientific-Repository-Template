@@ -29,11 +29,11 @@ def count_line(f, line):
   - `Camel Case With Spaces.ipynb` for Jupyter notebooks
 - Delete dead code. Do not comment out unused code — use git to recover it.
 - Use Jupyter notebooks only for explanations and visualization. Logic lives in `.py` files.
-- Code is automatically formatted with Black, checked with Flake8, and import-sorted with isort via GitHub Actions.
+- Code is automatically checked with [Ruff](https://docs.astral.sh/ruff/) (formatting, linting, import sorting) via GitHub Actions.
 
 ## Testing
 
-Use [pytest](https://docs.pytest.org/) for all tests. Tests live in `tests/` and run automatically on every push. See `tests/test_function_to_test.py` for an example.
+Use [pytest](https://docs.pytest.org/) for all tests. Tests live in `tests/` and run automatically on every push. See `tests/test_example.py` for an example.
 
 ## Environment Management
 
@@ -67,7 +67,7 @@ plt.style.use("style/scientific.mplstyle")
 
 ## License
 
-[Apache 2.0](../../LICENSE)
+[Apache 2.0](../LICENSE)
 
 ## Further Reading
 
