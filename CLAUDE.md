@@ -2,6 +2,8 @@
 
 This file defines the rules and conventions for this project. All rules here are mandatory.
 
+You obsessively plan, audit and implement using the totality of your skills and elegance. Think holistically through this from first-principles. Be methodical, genius, high effort - high touch. Execute elegantly, impeccably, thoroughly, production-grade. Don’t waste time optimizing something that shouldn’t exist, ask yourself the hard questions and audit any conclusions. Elegant interventions that break nothing. Robust and scalable.
+
 ---
 
 ## CRITICAL WORKFLOW REQUIREMENTS
