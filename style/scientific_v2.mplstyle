@@ -1,0 +1,102 @@
+# Florian Jehn: matplotlib style (v2, berry palette)
+# Use via src/plot_style.py (registers the font and the berry colormaps):
+#   from plot_style import use_style; use_style()
+# or directly: plt.style.use("scientific_v2.mplstyle")
+# Details and rules: style_guidelines.md, section "Plots"
+
+# FONT (Century Gothic, free fallback Didact Gothic in assets/fonts)
+font.family : sans-serif
+font.sans-serif : Century Gothic, Didact Gothic, URW Gothic, Questrial, DejaVu Sans
+font.size : 11
+mathtext.fontset : dejavusans
+axes.formatter.use_mathtext : True
+
+# COLOURS: warm charcoal text, warm grey labels, paper background
+text.color : 2E2A2B
+axes.labelcolor : 6E6668
+axes.titlecolor : 5D2A42
+axes.titlelocation : left
+axes.titlesize : 13
+axes.titlepad : 10
+axes.labelsize : 11
+figure.facecolor : F7F4EF
+axes.facecolor : F7F4EF
+savefig.facecolor : auto
+
+# Categorical order: aubergine, slate, rose, sage, ochre (checked for colour blindness)
+# Context/"other" data: A29A97. De-emphasized bars: C9B1BD with one aubergine bar.
+axes.prop_cycle : cycler('color', ['5D2A42', '46708A', 'CC8FA0', '627F64', 'C9A55A'])
+
+# AXES: only a bottom hairline, no box
+axes.spines.top : False
+axes.spines.right : False
+axes.spines.left : False
+axes.spines.bottom : True
+axes.edgecolor : D9D2CF
+axes.linewidth : 0.8
+axes.axisbelow : True
+
+# GRID: horizontal hairlines only (no vertical lines through bars)
+axes.grid : True
+axes.grid.axis : y
+grid.color : D9D2CF
+grid.linestyle : -
+grid.linewidth : 0.6
+grid.alpha : 1.0
+
+# LINES: square ends and mitred joins (angles over curves)
+lines.linewidth : 1.8
+lines.solid_capstyle : butt
+lines.solid_joinstyle : miter
+lines.dash_capstyle : butt
+lines.markersize : 5
+lines.markeredgewidth : 0.0
+patch.linewidth : 0.0
+patch.edgecolor : F7F4EF
+
+# SCATTER
+scatter.marker : o
+scatter.edgecolors : none
+
+# TICKS: no tick marks, warm grey labels
+xtick.bottom : True
+xtick.major.size : 0
+xtick.minor.size : 0
+ytick.left : False
+ytick.major.size : 0
+ytick.minor.size : 0
+xtick.major.pad : 6
+ytick.major.pad : 6
+xtick.color : 6E6668
+ytick.color : 6E6668
+xtick.labelcolor : 6E6668
+ytick.labelcolor : 6E6668
+xtick.labelsize : 10
+ytick.labelsize : 10
+
+# BOXPLOT
+boxplot.notch : True
+boxplot.meanline : True
+boxplot.flierprops.color : 5D2A42
+boxplot.flierprops.markeredgecolor : 5D2A42
+boxplot.boxprops.color : 5D2A42
+boxplot.whiskerprops.color : 5D2A42
+boxplot.capprops.color : 5D2A42
+boxplot.medianprops.color : CC8FA0
+boxplot.meanprops.color : 46708A
+
+# IMAGES / MAPS: RdPu is a built-in light-to-berry ramp; plot_style.py
+# registers "berry" (paper -> aubergine) and "berry_slate" (diverging)
+image.cmap : RdPu
+
+# LEGEND: no frame, prefer direct labels
+legend.frameon : False
+legend.fontsize : 10
+legend.labelcolor : 2E2A2B
+
+# FIGURE OUTPUT
+figure.figsize : 10, 4
+figure.dpi : 150
+figure.constrained_layout.use : True
+savefig.dpi : 300
+savefig.bbox : tight
